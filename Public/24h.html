@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaturnTradingTool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body style="padding-bottom: 100px;">
+<main>
+  <div class="container-fluid topperMenu text-center"></div>
+    <h3 class="greetings">SaturnTradingTool</h3>
+  </div>
+  <nav class="top-navbar navbar-expand " aria-label="Tenth navbar">
+    <div class="container-fluid col-12">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarsExample08">
+        <ul class="navbar-nav"></ul>
+            <li class="nav-item-top mx-2">
+            <a class="nav-link " href="../index.html">1Min</a>
+            </li>
+            <li class="nav-item-top mx-2">
+              <a class="nav-link" href="./15min.html">15Min</a>
+            </li>
+          <li class="nav-item-top mx-2">
+            <a class="nav-link" href="./30min.html">30Min</a>
+          </li>
+          <li class="nav-item-top mx-2">
+            <a class="nav-link" href="./1h.html">1H</a>
+          </li>
+          <li class="nav-item-top mx-2">
+            <a class="nav-link active border border-white rounded-5 px-2 py-1" href="./24h.html">24H</a>
+          </li>
+         <li class="nav-item-top mx-2">
+            <a class="nav-link" href="./1week.html">1W</a>
+          </li>
+          <li class="nav-item-top mx-2">
+            <a class="nav-link" href="./1month.html">1M</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container-main">
+        <div class="row">
+            <div class="col-4">
+                <img src="../assets/bitcoin-btc-logo.png" style="width: 150px;" class="img-fluid btc-logo" alt="Bitcoin Logo">
+                <p class="p-name"style="font-size: 1.5em;">BTC/USDT</p>
+                <p class="p-name" id="current-price-BTC">current:<br>60,000$</p>
+            </div>
+            <div class="col-6">
+                <p class="p fw-bold">Predict Price 24H</p>
+                <p class="p" id="signal-BTC">Sell/Buy</p>
+                <p class="p fw-bold">Signal Strength:</p>  
+                <p class="p" id="power-BTC">power</p>
+                <p class="p fw-bold">Estimated predicted price:</p>
+                <p id="predictPrice-BTC">999999</p>
+            </div>
+            <div class="col-12">
+                <button type="button" id="update" class="btn btn-dark">Update</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-main">
+        <div class="row">
+            <div class="col-4">
+                <img src="../assets/ETC_LOGO_Full_Color_Black.png" style="width:80px ;" class="img-fluid btc-logo" alt="Ethereum Logo">
+                <p class="p-name"style="font-size: 1.5em;">ETH/USDT</p>
+                <p class="p-name" id="current-price-ETH">current:<br>4,000$</p>
+            </div>
+            <div class="col-6">
+                <p class="p fw-bold">Predict Price 24H Min</p>
+                <p class="p" id="signal-ETH">Sell/Buy</p>
+                <p class="p fw-bold">Signal Strength:</p>  
+                <p class="p" id="power-ETH">power</p>
+                <p class="p fw-bold">Estimated predicted price:</p>
+                <p id="predictPrice-ETH">999999</p>
+            </div>
+            <div class="col-12">
+                <button type="button" id="update" class="btn btn-dark">Update</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-main">
+        <div class="row">
+            <div class="col-4">
+                <img src="../assets/12114250.png" style="width: 150px;"class="img-fluid btc-logo" alt="Tron Logo">
+                <p class="p-name"style="font-size: 1.5em;">TRX/USDT</p>
+                <p class="p-name" id="current-price-TRX">current:<br>0.10$</p>
+            </div>
+            <div class="col-6">
+                <p class="p fw-bold">Predict Price 24H</p>
+                <p class="p" id="signal-TRX">Sell/Buy</p>
+                <p class="p fw-bold">Signal Strength:</p>  
+                <p class="p" id="power-TRX">power</p>
+                <p class="p fw-bold">Estimated predicted price:</p>
+                <p id="predictPrice-TRX">999999</p>
+            </div>
+            <div class="col-12">
+                <button type="button" id="update" class="btn btn-dark">Update</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-main">
+        <div class="row">
+            <div class="col-4">
+                <img src="../assets/png-transparent-bnb-cryptocurrencies-icon.png" style="width: 150px;" class="img-fluid btc-logo" alt="BNB Logo">
+                <p class="p-name"style="font-size: 1.5em;">BNB/USDT</p>
+                <p class="p-name" id="current-price-BNB">current:<br>500$</p>
+            </div>
+            <div class="col-6">
+                <p class="p fw-bold">Predict Price 24H</p>
+                <p class="p" id="signal-BNB">Sell/Buy</p>
+                <p class="p fw-bold">Signal Strength:</p>  
+                <p class="p" id="power-BNB">power</p>
+                <p class="p fw-bold">Estimated predicted price:</p>
+                <p id="predictPrice-BNB">999999</p>
+            </div>
+            <div class="col-12">
+                <button type="button" id="update" class="btn btn-dark">Update</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-main">
+        <div class="row">
+            <div class="col-4">
+                <img src="../assets/solana-sol-logo-12828AD23D-seeklogo.com.png" style="width: 130px;" class="img-fluid btc-logo" alt="Solana Logo">
+                <p class="p-name"style="font-size: 1.5em;">SOL/USDT</p>
+                <p class="p-name" id="current-price-SOL">current:<br>150$</p>
+            </div>
+            <div class="col-6">
+                <p class="p fw-bold">Predict Price 24H Min</p>
+                <p class="p" id="signal-SOL">Sell/Buy</p>
+                <p class="p fw-bold">Signal Strength:</p>  
+                <p class="p" id="power-SOL">power</p>
+                <p class="p fw-bold">Estimated predicted price:</p>
+                <p id="predictPrice-SOL">999999</p>
+            </div>
+            <div class="col-12">
+                <button type="button" id="update" class="btn btn-dark">Update</button>
+            </div>
+        </div>
+    </div>
+    
+
+</main>
+
+<footer>
+  <nav class="navbar-footer navbar-expand " id="navbar">
+    <div class="container ">
+      <div class="collapse navbar-collapse d-flex " id="navbarsExample11">
+        <ul class="navbar-nav col-6 justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active text-white " id="home" aria-current="page" href="../index.html"><img  style="width:1.6rem ;"src="../assets/house.svg"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" id="youtube" href="./youtube.html"><img style="width:1.6rem ;" src="../assets/youtube.svg"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" id="telegram"  href="https://t.me/saturntradingtool"><img style="width:1.6rem ;" src="../assets/telegram.svg"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" id="info"  href="./info.html"><img style="width:1.6rem ;" src="../assets/info-lg.svg"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <h6 class="h6 signutre">All copyright belongs to K1-LAB.</h6>
+   
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../Scripts/script24h.js"></script>
+</body>
+</html>
